@@ -226,6 +226,20 @@
                     </li>
                 </ul>
             </div>
+            <div class="section-card">
+                <h2>6. Advanced Environmental & Geofencing Safeguards</h2>
+                <p>To further reinforce flight safety beyond pilot vigilance, experimental nano drones can be equipped with advanced engineering safeguards to preemptively handle complex failure scenarios:</p>
+                <ul>
+                     <li><strong>Advanced RTK-GPS Geofencing:</strong> While basic GPS is prone to drift, integrating Real-Time Kinematic (RTK) GPS provides centimeter-level accuracy. The drone's flight controller is loaded with a dynamic 3D geofence (e.g., a 50-meter radius bounded by a strict 15-meter altitude limit). If the RTK-GPS detects the drone approaching a Red Zone (like an airport), the system initiates a "virtual wall" response, aggressively pitching away from the boundary regardless of pilot commands.</li>
+                     <li><strong>Wind & Vibration Analysis:</strong> Nano drones are vulnerable to environmental disruption. By leveraging the onboard IMU (Inertial Measurement Unit) and analyzing motor current spikes, the drone monitors its own stability.
+                         <ul>
+                             <li><em>High Wind Detection:</em> If the drone sustains asymmetrical motor thrust (e.g., over 75% throttle) just to counteract wind, the flight controller flags the condition and executes an immediate controlled descent to 5 meters, where wind sheer is typically weaker.</li>
+                             <li><em>Vibration Filtering:</em> Accelerometer data passes through a Fast Fourier Transform (FFT) filter. Specific high-frequency vibration signatures—indicating a failing motor bearing or chipped propeller—trigger a preemptive landing before a catastrophic structural failure mid-air.</li>
+                         </ul>
+                     </li>
+                      <li><strong>Dual-Redundancy Systems:</strong> To prevent single points of failure, critical hardware is duplicated. Utilizing dual barometers allows cross-referencing for accurate altitude holds, preventing sudden drops if one sensor misreads air pressure. Additionally, a redundant micro-capacitor ensures the emergency micro-parachute deploys even if the main battery ejects or fails completely.</li>
+                </ul>
+            </div>
 
             <div class="section-card">
                 <h2>Conclusion</h2>
