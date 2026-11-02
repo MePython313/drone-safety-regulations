@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Skies | Drone Flying Safety Guide</title>
+    <style>
+        /* Base (Light Mode) Variables */
+        :root {
+            color-scheme: light dark;
+            --bg-color: #f3f4f6;
+            --container-bg: #ffffff;
+            --text-color: #333333;
+            --heading-color: #111827;
+            --accent-color: #3b82f6;
+            --link-color: #2563eb;
+            --box-bg: #e2e8f0;
+            --border-color: #e5e7eb;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            --meta-color: #6b7280;
+        }
+
+        /* Dark Mode Variables */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121212;
+                --container-bg: #1e1e1e;
+                --text-color: #e0e0e0;
+                --heading-color: #ffffff;
+                --accent-color: #3b82f6;
+                --link-color: #60a5fa;
+                --box-bg: #2d3748;
+                --border-color: #333333;
+                --shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+                --meta-color: #a0aec0;
+            }
+        }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        h2 {
+            color: var(--heading-color);
+            margin-top: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .author-meta {
+            color: var(--meta-color);
+            font-size: 1.1rem;
+            font-style: italic;
+            transition: color 0.3s ease;
+        }
+
+        .author-meta a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .author-meta a:hover {
+            text-decoration: underline;
+        }
+
+        .section-card {
+            background-color: var(--container-bg);
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .rule-of-thumb {
+            font-style: italic;
+            color: var(--meta-color);
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+        /* Custom Box for the Engineering Solutions */
+        .solution-box {
+            background-color: var(--box-bg);
+            padding: 15px;
+            border-left: 4px solid var(--accent-color);
+            margin-top: 10px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .solution-box a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .solution-box a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            color: var(--meta-color);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Safe Skies: The Ultimate Guide to Drone Flying Safety</h1>
+            <div class="author-meta">
+                A Safety Guide by PG | <a href="https://github.com/MePython313" target="_blank">@MePython313</a>
+            </div>
+        </header>
+
+        <main>
+            <div class="section-card">
+                <h2>Introduction</h2>
+                <p>Drones are no longer just expensive toys; they are actual aircraft sharing the sky with birds, helicopters, and airplanes. Whether you are flying a tiny Nano drone in your backyard or a bigger camera drone for photography, flying comes with a lot of responsibility. A crashing drone can damage property, hurt people, or even cause major accidents if it flies into restricted airspace. That is why understanding drone safety and following the laws set by the Directorate General of Civil Aviation (DGCA) in India is the most important part of being a drone pilot.</p>
+            </div>
+
+            <div class="section-card">
+                <h2>1. Know Your Zones (The Airspace Rules)</h2>
+                <p>Before you even turn your drone on, you have to know if you are legally allowed to fly where you are standing. The DGCA divides the sky into three color-coded zones, which you can check on the government's Digital Sky app:</p>
+                <ul>
+                    <li><strong>Red Zones:</strong> Strictly no flying. These are areas near airports, military bases, and important government buildings.</li>
+                    <li><strong>Yellow Zones:</strong> Controlled airspace. You need special permission from air traffic control to fly here.</li>
+                    <li><strong>Green Zones:</strong> Safe to fly! This is uncontrolled airspace where most hobbyists fly.</li>
+                </ul>
+                <span class="rule-of-thumb">*Rule of Thumb: Even in a Green Zone, Nano drones (under 250 grams) can only fly up to 15 meters (about 50 feet) high, and Micro drones can go up to 120 meters (about 400 feet).*</span>
+            </div>
+
+            <div class="section-card">
+                <h2>2. Dress for the Crash (Personal Safety)</h2>
+                <p>A lot of people forget that drones have plastic blades spinning at thousands of RPMs (revolutions per minute). To keep yourself safe, you need to prepare your body and your surroundings:</p>
+                <ul>
+                    <li><strong>Protect Your Eyes:</strong> Always wear clear safety glasses or sunglasses. If a drone crashes or a propeller snaps, you want a shield over your eyes.</li>
+                    <li><strong>Wear Full Pants:</strong> Never fly in shorts. Wear jeans or full pants. If you lose control and the drone zooms into your legs, pants will save you from getting nasty cuts from the propellers.</li>
+                    <li><strong>Watch Your Step:</strong> Never fly while standing near stairs, ledges, or balconies. When you are staring up at the sky trying to watch your drone, it is incredibly easy to accidentally walk backwards, trip, and fall down the stairs. Always plant your feet on flat, open ground!</li>
+                </ul>
+            </div>
+
+            <div class="section-card">
+                <h2>3. The Golden Rules of Piloting</h2>
+                <p>Once you are in a safe zone and wearing the right gear, there are a few golden rules every pilot must follow to prevent accidents:</p>
+                <ul>
+                    <li><strong>Visual Line of Sight (VLOS):</strong> You must be able to see your drone with your own bare eyes at all times. If it flies behind a building or into a cloud, you are flying blind.</li>
+                    <li><strong>Daylight Only:</strong> You are only allowed to fly from sunrise to sunset. Flying in the dark makes it impossible to see power lines or trees.</li>
+                    <li><strong>Avoid the Crowds:</strong> Never fly over stadiums, moving traffic, or groups of people. If a motor fails, gravity will pull the drone down fast.
+                        <div class="solution-box">
+                            <strong>Note:</strong> To fix this danger, I designed an emergency micro-parachute to safely float the drone down if it falls near crowds, plus a laser sensor to automatically lock the drone's height limit so it never flies dangerously high. You can see my solutions here: <a href="https://mepython313.github.io/Smart-Failsafes-for-Drones/" target="_blank">Smart Failsafes Project</a>
+                        </div>
+                    </li>
+                    <li><strong>Respect Privacy:</strong> A drone is not a spy camera. Never fly over someone else’s private property or point your camera into their windows.</li>
+                </ul>
+            </div>
+
+            <div class="section-card">
+                <h2>4. The Pre-Flight Checklist</h2>
+                <p>Real airline pilots never take off without doing a checklist, and drone pilots shouldn't either. Before every flight, make sure to check these things:</p>
+                <ul>
+                    <li><strong>Weather:</strong> Drones hate high winds and rain. If the trees are swaying heavily, keep the drone on the ground. Water can short-circuit the battery, and wind can blow a lightweight drone away.</li>
+                    <li><strong>Propellers:</strong> Check the plastic blades for any cracks. A broken propeller vibrating mid-air can snap and cause the drone to drop like a rock.</li>
+                    <li><strong>Battery Power:</strong> Make sure the drone and the remote controller are at 100% battery. Never take off with a low battery, or the drone might try to auto-land in a dangerous spot like a river or a busy road.
+                        <div class="solution-box">
+                            <strong>Note:</strong> If you want to see an engineering solution I came up with to fix this exact auto-landing and flyaway problem, see: <a href="https://mepython313.github.io/Smart-Failsafes-for-Drones/" target="_blank">Smart Failsafes Project</a>
+                        </div>
+                    </li>
+                    <li><strong>Surroundings:</strong> Look up and around. Are there power lines? Tall trees? Plan your flight path before taking off.</li>
+                </ul>
+            </div>
+
+            <div class="section-card">
+                <h2>5. How to Handle Emergencies</h2>
+                <p>Even the best pilots run into trouble. Knowing how to react can save your drone and keep people safe.</p>
+                <ul>
+                    <li><strong>Bird Attacks:</strong> Birds like hawks and crows are very territorial. If a bird swoops at your drone, fly <em>straight up</em>. Birds are great at diving but terrible at climbing straight up, so you can easily escape.</li>
+                    <li><strong>Strong Wind:</strong> If the wind catches your drone and is blowing it away, drop your altitude immediately. Wind is always weaker closer to the ground.</li>
+                    <li><strong>Lost Connection:</strong> If your remote screen goes black or loses signal, do not panic. Most modern drones have a "Return-to-Home" (RTH) feature that uses GPS to fly back to where it took off. But there is a huge problem with basic RTH: the drone is flying completely blind! It could easily crash into a tree on its way back, or even worse, land right on top of someone standing at the home spot.
+                        <div class="solution-box">
+                            <strong>Note:</strong> To solve this with an AI-powered smart RTH that dodges obstacles, warns crowds with dynamic beeps, and allows pilot overrides, see my full solution here: <a href="https://mepython313.github.io/Smart-Failsafes-for-Drones/" target="_blank">Smart Failsafes Project</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section-card">
+                <h2>Conclusion</h2>
+                <p>Flying a drone is an amazing hobby that mixes aviation, photography, and technology. But the sky is a shared space. By respecting the DGCA weight limits, wearing the right safety gear, doing a pre-flight checklist, and keeping the drone in sight, pilots can make sure the skies stay safe and open for everyone. Good pilots don't just know how to do cool tricks; they know how to fly smart.</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 PG. Published on GitHub Pages.</p>
+        </footer>
+    </div>
+</body>
+</html>
